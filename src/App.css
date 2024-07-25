@@ -171,3 +171,60 @@ table, th, td {
   padding: 8px;
   text-align: center;
 }
+
+/* Add this CSS to your App.css or another CSS file */
+
+.new-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.new-plan-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-part-button,
+.submit-button {
+  padding: 10px 20px;
+  background-color: #15365F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-part-button {
+  background-color: #ff7514;
+}
+
+.submit-button {
+  background-color: #002857;
+}
+
+.add-part-button:hover,
+.submit-button:hover {
+  opacity: 0.8;
+}
