@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*---------------------------------------------------------------------------------*/
+/*Navbar*/
+.navbar{
+  background-color: #002857;
   color: white;
+  height: 120px;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h2{
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Navbarlist h3 {
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar h3:hover {
+  color: #ff7514; /* Change the text color when hovering */
+}
+
+.Navbarlist h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px; /* Adjust this value to control the thickness of the underline */
+  width: 0; /* Initially, the underline has no width */
+  height: 2px; /* Height of the underline */
+  background-color: #ff7514; /* Color of the underline */
+  transition: width 0.8s; /* Add a transition effect */
+}
+
+.Navbarlist h3:hover::after {
+  width: 100%; /* When hovering, expand the underline to cover the width of the text */
+}
+
+.icon {
+  height: 20px;/* Default color */
+  margin-top: -10px;
+}
+
+.icon:hover {
+  color: #ff7514; /* Color when hovering */
+}
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*Acceuil*/
+
+.vertical-line {
+  height: 100vh; /* Adjust the height of the line as needed */
+  width: 2px; /* Width of the line */
+  background-color: #ff7514; /* Color of the line */
+  margin-top: 50px;
+  
+}
+.custom-card:hover { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); }
+
+
+.vertical-line1 {
+  height: 40vh; /* Adjust the height of the line as needed */
+  width: 2px; /* Width of the line */
+  background-color: #ff7514; /* Color of the line */
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/*About*/
+
+.defimg{
+  width:1518px;
+  height: 600px;
+  /*background-color: #ff7514;*/
+  background-image: url(https://www.customwiring.com/wp-content/uploads/2023/04/AdobeStock_521682178-scaled.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center; 
+  width: 99vw;
+  height: 82vh;
+
+}
+
+.title {
+  color: white;
+  margin-left: 170px;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(10%);
+    transform: translateY(130%);
   }
+}
+.defimg > h6{
+  margin-left: 200px;
+  color: aliceblue;
+  animation: slide-in2 2s ease-out forwards;
+}
+
+
+@keyframes slide-in2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(60%);
+    transform: translateY(380%);
+  }}
+
+
+
+  
+.vertical-line2 {
+  height: 230vh; /* Adjust the height of the line as needed */
+  width: 2px; /* Width of the line */
+  background-color: #ff7514; /* Color of the line */
+  margin-top: 60px;
+  margin-left: 10px;
+  
+}
+
+label{
+  font-size: 15px;
+}
+
+.headofcv{
+  background-color:rgb(87, 92, 95);
+}
+
+.formation{
+  height: 190px ;
+  border-radius:15px ;
+ width: 110px;
+  background-color:#15365F ;
+  display: flex;
+  flex-direction: column; 
+ align-items: center;
+  
+}
+
+.circle{
+  height:60px ;
+  width:60px ;
+ background-color:#C3A456;
+    margin-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+   
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
